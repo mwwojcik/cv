@@ -1,0 +1,117 @@
+\documentclass[11pt]{moderncv}
+\usepackage[cp1250]{inputenc} % kodowanie ISO Latin2 (Pod Win cp1250)
+%\usepackage[MeX]{polski}
+\usepackage[polish]{babel}
+\usepackage[below]{placeins}
+% moderncv styles
+%\moderncvstyle{casual}
+%\moderncvstyle[nocolor]{casual}
+\moderncvstyle[nocolor]{classic}
+%\moderncvstyle[roman]{classic}
+
+% character encoding
+%\usepackage[utf8]{inputenc}
+
+% personal data
+\firstname{Mariusz }
+\familyname{Wójcik}
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+\address{ul. Cybisa 3 m.24\\02-784 Warszawa} % for casual style
+\phone{504 00 31 31}
+\email{mw.wojcik@gmail.com}
+%\extrainfo{{\small maried with childrens}}
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
+\definecolor{see}{rgb}{0.5,0.5,0.5}
+
+% command for text subscripts
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\makequote
+
+\section{Przebieg nauki}
+\cventry{1999-2005}{Politechnika Warszawska, studia dzienne magistersko-in¿ynierskie na \\Wydziale Elektrycznym, kierunek Informatyka ukoñczone z wynikiem bardzo dobrym;}{}{}{}{{}{}}
+\cventry{1995-1999}{Liceum Ogólnokszta³c¹ce im. Marii Sk³odowskiej-Curie - klasa autorska o profilu Informatyka w Pu³awach}{}{}{}{}{{}{}}
+
+\section{Doœwiadczenie zawodowe}
+\cvitem{2004-2007}{\textbf{Centralny Oœrodek Informatyki Politechniki Warszawskiej}}
+\cvitem{Rola}{\emph{Projektant/Programista portalu i aplikacji internetowych, Kierownik Projektów, Kierownik Zespo³u}}
+\cvitem{Opis}{\small 
+\begin{itemize}
+\item Udzia³ w projektach programistyczny wykorzystuj¹cych technologie:  Java (Servlet+JSP),Spring (Spring Web MVC, Spring Portlet MVC),Struts, Hibernate,  Portlet JSR-168,JSTL,Oracle Portlet,PL-SQL, Oracle Portal 
+\item Opracowanie metodyki projektowania aplikacji Spring(Web i Portlet) w oparciu o koncepcjê Model Driven Architecture
+\item Udzia³ w projektach analitycznych z zakresu In¿ynierii Oprogramowania opartych na jêzyku modelowania UML
+\end{itemize}}
+
+
+\cvitem {03.2006-06.2006}{\textbf{Bur-Bek Konsulting}}
+\cvitem{Rola}{\emph{Programista aplikacji internetowych}}
+\cvitem{Opis}{\small Praca na umowê o dzie³o w zakresie udzia³u w projekcie firmy Siemens opartym na technologiach: Java Servlet, Struts, WebService}
+
+\cvitem {2004-2005}{\textbf{Oœrodek Kszta³cenia na Odleg³oœæ Politechniki Warszawskiej}}
+\cvitem{}{\small Praca na umowê o dzie³o w zakresie przygotowania materia³u do podrêcznika, oraz wspó³prowadzenia przedmiotu "Informatyka V - Techniki Internetu"}
+
+\section{Udzia³ w projektach}
+\cventry{}{\textbf{Portal Politechniki Warszawskiej}}{}{technologia: Oracle Portal}{projekt wdro¿ony}{ \hfill{\itshape\color{see}\footnotesize{} \httplink{www.pw.edu.pl}.}}
+\cventry{}{\textbf{Portal Korporacyjny Centralnego Oœrodka Informatyki Politechniki Warszawskiej}}{}{technologia: Oracle Portal}{projekt wdro¿ony}{ \hfill{\itshape\color{see}\footnotesize{} \httplink{www.coi.pw.edu.pl}.}}
+\cventry{}{\textbf{Serwis sklepu internetowego}}{}{technologia: Joomla + modu³ VirtueMart}{projekt niewdro¿ony}{ }
+\cventry{}{\textbf{Serwis Zak³adu Grawerskiego}}{}{technologia: Joomla}{projekt wdro¿ony}{ \hfill{\itshape\color{see}\footnotesize{} \httplink{www.grawerstwo.waw.pl}.}}
+\closesection
+\newpage
+
+\section{\textbf{Przebyte szkolenia}}
+\cventry{12.2006}{Zarz¹dzanie projektami wg standardu PMBOK@GUIDE I PMI}{Centrum Szkoleniowe SAP}{Warszawa}{}{}
+\cventry{2005}{Oracle 10gAS - Tworzenie portali korporacyjnych }{Oracle University}{Warszawa}{}{}
+\cventry{2005}{Oracle 10gAS - Tworzenie portletów w technologii Java }{Oracle University}{Warszawa}{}{}
+\cventry{2005}{Oracle 10gAS - Tworzenie portletów w technologii PL-SQL }{Oracle University}{Warszawa}{}{}
+
+\section{Jêzyki obce}
+\cvlistitem{Angielski - dobry w mowie i piœmie}
+\cvlistitem{Rosyjski - podstawowy}
+
+\section{Dzia³alnoœæ dodatkowa}
+\cventry{}{Nale¿ê do Warszawskiej Grupy U¿ytkowników Java (JUG)}{}{}{}{ \hfill{\itshape\color{see}\footnotesize{} \httplink{groups.google.com/group/warszawa-jug}.}}
+\cventry{}{Tworzê bloga technicznego poœwiêconego technologiom Java JEE i Spring}{}{}{}{ \hfill{\itshape\color{see}\footnotesize{} \httplink{www.mariuszwojcik.blogspot.com}.}}
+
+\section{Umiejêtnoœci dodatkowe}
+\cvcomputer{OS}{Linux, Windows}{Œrodowiska programistyczne}{Eclipse, NetBeans, JDeveloper}
+\cvcomputer{Technologie Web}{Servlet, JSP, Struts MVC, Spring Web MVC,Hibernate,JSTL,SiteMesh}{Technologie portletowe}{Spring Portlet MVC, Oracle Portlets, Portlety JSR-168}
+\cvcomputer{WWW}{XHTML,HTML,CSS,JavaScript}{Bazy danych}{MySQL, PostgreSQL,Oracle}
+\cvcomputer{Jêzyki projektowania}{UML}{Œrodowiska projektowe}{Enterprise Architect, Sybase Power Designer, Rational Rose, MS Project 2003}
+
+
+\closesection
+
+%\section{Section with your own content}\closesection
+%Your content here,\\
+%inside the normal \LaTeX{} environment.
+
+%\emptysection{}
+%\cvitem{Now}{Back to moderncv layout, without making a new section :-)}
+\vspace{7cm}
+
+\footnotesize
+Wyra¿am zgodê na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbêdnych do realizacji procesu rekrutacji (zgodnie z Ustaw¹ z dn. 29 sierpnia 1997 o Ochronie Danych Osobowych Dz. U. nr 133 pozycja 883).
+\end{document}

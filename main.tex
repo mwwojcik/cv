@@ -1,0 +1,205 @@
+\documentclass[11pt]{moderncv}
+\usepackage[utf8]{inputenc} % kodowanie ISO Latin2 (Pod Win cp1250)
+%\usepackage[MeX]{polski}
+\usepackage[polish]{babel}
+\usepackage[below]{placeins}
+% moderncv styles
+%\moderncvstyle{casual}
+%\moderncvstyle[nocolor]{casual}
+\moderncvstyle[nocolor]{classic}
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+%\moderncvstyle[roman]{classic}
+
+% character encoding
+%\usepackage[utf8]{inputenc}
+
+% the following definition is from the file moderncvstyleclassic.sty
+
+
+% personal data
+\firstname{Mariusz }
+\familyname{Wójcik}
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+\address{ul. Cybisa 3 m.24\\02-784 Warszawa} % for casual style
+\phone{504 00 31 31}
+\email{mw.wojcik@gmail.com}
+%\extrainfo{{\small maried with childrens}}
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
+\definecolor{see}{rgb}{0.5,0.5,0.5}
+
+% command for text subscripts
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\makequote
+
+\section{Przebieg nauki}
+\cventry{1999-2005}{Politechnika Warszawska, studia dzienne magistersko-inżynierskie na \\Wydziale Elektrycznym, kierunek Informatyka ukończone z wynikiem bardzo dobrym;}{}{}{}{{}{}}
+\cventry{1995-1999}{Liceum Ogólnokształcące im. Marii Skłodowskiej-Curie - klasa autorska o profilu Informatyka w Puławach}{}{}{}{}{{}{}}
+
+\section{Doświadczenie zawodowe}
+
+\cvitem{2010-}{\textbf{Asseco Poland}}
+\cvitem{Rola}{\emph{Projektant JEE,Programista JEE, Lider Obszaru Merytorycznego, Kierownik Zespołu}}
+\cvitem{Opis}{\small 
+\begin{itemize}
+\item Udział w projektach integracyjnych tworzonych w technologii Java, JEE, SOA. 
+\end{itemize}}
+
+\cvitem{2007-2010}{\textbf{ABG}}
+\cvitem{Rola}{\emph{Projektant JEE,Programista JEE}}
+\cvitem{Opis}{\small 
+\begin{itemize}
+\item Udział w projekcie programistycznym wykorzystującym technologie:JEE (Spring,JPA-Hibernate,JSP,JSF) - PROW713  
+\end{itemize}}
+
+\cvitem{2004-2007}{\textbf{Centralny Ośrodek Informatyki Politechniki Warszawskiej}}
+\cvitem{Rola}{\emph{Projektant/Programista portalu i aplikacji internetowych}}
+\cvitem{Opis}{\small 
+\begin{itemize}
+\item Udział w projektach programistyczny wykorzystujących technologie:  Java (Servlet+JSP),Spring,Struts, Hibernate,JSTL,PL-SQL
+\item Udział w projektach analitycznych z zakresu Inżynierii Oprogramowania opartych na języku modelowania UML
+\end{itemize}}
+
+\section{\textbf{Przebyte szkolenia i certyfikaty}}
+\cventry{03.2017}{FrontEnd}{Szkolenia online w zakresie HTML5,CSS3,JavaScript,JQuery organizowane przez serwis www.eduweb.pl}{}{}{}
+\cventry{08.2016}{SCJP}{Oracle Certified Professional, Java SE 8 Programmer }{}{}{}
+\cventry{10.2008}{SCJP}{Sun Certified Java Programmer}{}{}{}
+\cventry{07.2009}{SCWCD}{Sun Certified Web Component Developer}{}{}{}
+\cventry{02.2010}{SCBCD}{Sun Certified Business Component Developer}{}{}{}
+
+
+\closesection
+\newpage 
+
+
+\section{Projekty}
+
+\cvitem{2015-    \newline 2010-2012}{\textbf{KRUS-WFL}}
+\cvitem{Pracodawca}{Asseco Poland}
+\cvitem{Technologie}{JAVA, SOA, Enterprise Architect API ,SOAP WebService}
+\cvitem{Opis}{ Projekt integracyjny wykonywany według koncepcji SOA WebService, którego celem  było wytworzenie warstwy integracyjnej pomiędzy systemami realizującymi obsługę świadczeń rolniczych KRUS.Projekt wdrożony. Aplikacja używana przez 3000 użytkowników.}
+\cvitem{Zadania}{
+	\begin{itemize}
+		\item Lider obszaru merytorycznego (4-10 osób)
+		\item Opracowanie zasad wykorzystania Kanonicznego Modelu Dziedziny do definicji kontraktu pomiędzy integrowanymi systemami
+		\item Uzgadnianie kontraktu pomiędzy systemami (projekt EA)
+		\item Opracowanie narzędzi służących do utrzymania spójności modelu (skrypty EA)
+		\item Opracowanie zasad, wdrożenie i utrzymywanie dwuetapowej generaty modelu (aplikacje java przekształcające model EA do WSDL/XSD, a następnie generujące kod Java, pluginy maven, konfiguracja pom)
+		\item Implementacja	
+	\end{itemize}
+}
+
+
+\cvitem{2012-2015}{\textbf{Elektroniczna Platforma Gromadzenia, Analizy i Udostępniania zasobów cyfrowych o Zdarzeniach Medycznych (P1)}}
+\cvitem{Pracodawca}{Asseco Poland}
+\cvitem{Technologie}{ JAVA, SOA, Enterprise Architect API ,SOAP WebService}
+\cvitem{Opis}{ Projekt integracyjny wykonywany według koncepcji SOA WebService, którego celem  było wytworzenie kompleksowej platformy wspierającej proces leczenia pacjentów. }
+\cvitem{Zadania}{
+\begin{itemize}
+	\item Szef mikrozespołu programistów (4-5 osób)
+	\item Opracowanie zasad, wdrożenie i utrzymywanie dwuetapowej generaty modelu (aplikacje java przekształcające model EA do WSDL/XSD, a następnie generujące kod Java, pluginy maven, konfiguracja pom)
+	\item Implementacja	obszaru merytorycznego - skierowania
+	\item Prace implementacyjne przy wprowadzeniu międzynarodowego formatu zapisu zdarzeń medycznych HL7
+\end{itemize}
+}
+
+
+
+
+
+
+\cvitem{2007-2010}{\textbf{PROW713}}
+\cvitem{Pracodawca}{ABG}
+\cvitem{Technologie}{ Oracle DB, JAVA, Spring, JSF, JPA (Hibernate)}
+\cvitem{item}{Aplikacja służąca do dystrybucji funduszy unijnych w ramach Programu Restrukturyzacji Obszarów Wiejskich 2007-2013}
+\cvitem{Zadania}
+{
+\begin{itemize}
+	\item Programista Java
+	\item Prace implementacjyjne we wszystkich warstwach aplikacji DB/DAO/Usług/JSF
+\end{itemize}
+}
+
+
+\closesection
+
+\newpage
+
+\section{Podprojekty autorskie}
+
+\cvitem{Asseco Poland}{\textbf{Genertor MDA (PIM2PIM)}}
+\cvitem{Technologie}{Java,Sparx API do Enterprise Architect}
+\cvitem{Opis}{ narzędzie służące do przetwarzania artefaktów projektowych zdefiniowanych w modelu Enterprise Architect na artefakty WSDL/XSD }
+
+\cvitem{Asseco Poland}{\textbf{Skrypty Enterprise Architect}}
+\cvitem{Technologie}{Sparx API do Enterprise Architect}
+\cvitem{Opis}{ Skrypty pomagające utrzymanie spójności artefaktów projektowych modelu EA(repozytorium ok. 10 tys obiektów)}
+
+\cvitem{Asseco Poland}{\textbf{Narzędzie do monitorowania postępów prac w projekcie}}
+\cvitem{Technologie}{(Java, Java FX,Apache POI,JIRA Rest API}
+\cvitem{Opis}{Narzędzie wykorzystywane do monitorowania postępu prac programistycznych na podstawie JIRA wykorzystywane przy metodzie pomiaru zaawansowania EVM}
+
+
+
+%W ramach projektu uczesniczyłem przy opracowaniu zasad współpracy i uzgadnianiu kontraktu pomiędzy integrowanymi systemami. 
+
+%Brałem aktywny udział przy tworzeniu narzędzi pomocniczych używanych w procesie wytwórczym (Generator MDA służący do tworzenia artefaktów WSDL/XSD na %podstawie modelu zdefiniowanego w EA), oraz narzędzia do monitorowania postępu prac programistycznych na podstawie JIRA}{}
+
+
+
+
+\closesection
+
+
+
+
+\section{Języki obce}
+\cvlistitem{Angielski - dobry w mowie i piśmie}
+
+
+
+\section{Umiejętności dodatkowe}
+\cvcomputer{OS}{Linux, Windows}{Środowiska programistyczne}{InteliJ Idea}
+\cvcomputer{Technologie}{JSP,JSF,Hibernate,JSTL,JPA,Spring,JEE}{}{}
+\cvcomputer{WWW}{HTML5,CSS3,JQuery}{Bazy danych}{PostgreSQL,Oracle}
+\cvcomputer{Języki projektowania}{UML}{Środowiska projektowe}{Enterprise Architect}
+\cvcomputer{Metodyki projektowe}{SCRUM, EVM}{}{}
+
+
+\closesection
+
+%\section{Section with your own content}\closesection
+%Your content here,\\
+%inside the normal \LaTeX{} environment.
+
+%\emptysection{}
+%\cvitem{Now}{Back to moderncv layout, without making a new section :-)}
+%\vspace{1,5cm}
+
+\footnotesize
+Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezb?dnych do realizacji procesu rekrutacji (zgodnie z Ustaw? z dn. 29 sierpnia 1997 o Ochronie Danych Osobowych Dz. U. nr 133 pozycja 883).
+\end{document}
