@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/TeX Live for SUSE Linux) (preloaded format=pdflatex 2020.11.14)  16 NOV 2020 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/TeX Live for SUSE Linux) (preloaded format=pdflatex 2020.11.14)  16 NOV 2020 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1063,7 +1063,11 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 56.
 (/usr/share/texmf/tex/latex/marvosym/umvs.fd)
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 72.
- [1
+
+Overfull \vbox (2.49551pt too high) has occurred while \output is active []
+
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 125--125
@@ -1100,7 +1104,7 @@ Here is how much of TeX's memory you used:
  18343 multiletter control sequences out of 15000+600000
  563262 words of font info for 37 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 35i,9n,45p,10407b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,9n,45p,10407b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/ty
@@ -1108,7 +1112,7 @@ pe1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/
 share/texmf/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (2 pages, 183295 bytes).
+Output written on main.pdf (2 pages, 183363 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
